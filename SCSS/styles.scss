@@ -1,0 +1,163 @@
+h1,
+h2 {
+  background-color: red;
+  text-align: center;
+}
+
+img {
+  width: 90px;
+ 
+}
+
+header {
+  nav {
+    ul {
+      li {
+        text-align: center;
+        list-style-type: none;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+p {
+  text-align: right;
+}
+
+.parrafo1 {
+  display: flex;
+}
+
+.auto1 {
+  width: 350px;
+  margin-right: 25px;
+}
+
+.container1,
+.container2 {
+  display: flex;
+}
+
+.caja {
+  text-align: center;
+}
+
+.foto {
+  width: 300px;
+}
+
+.container-padre {
+  display: flex;
+}
+
+.textoxd {
+  text-align: center;
+  margin-top: 15%;
+}
+
+.contactos {
+  margin-top: 45%;
+  text-align: center;
+}
+
+.interfaz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-modelos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .caja-modelos {
+    width: 33%;
+    text-align: center;
+
+    p {
+      text-align: center;
+    }
+
+    img {
+      width: 60%;
+    }
+  }
+}
+
+.link1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.contenedor-padre {
+  display: flex;
+  flex-direction: row;
+}
+
+.contenedor-cotizacion {
+  width: 100%;
+  margin-left: 15%;
+  display: flex;
+  flex-wrap: wrap;
+
+  .caja-cotizacion {
+    width: 45%;
+
+    p {
+      text-align: center;
+      width: 45%;
+    }
+
+    img {
+      width: 45%;
+    }
+  }
+}
+
+.seccion-seguros {
+  text-align: center;
+
+  img {
+    width: 30%;
+  }
+}
+
+.aseguradoras {
+  text-align: center;
+
+  img {
+    width: 45%;
+  }
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20%;
+  row-gap: 2vh;
+
+  .caja-contacto {
+    width: 20%;
+  }
+
+  .enviar {
+    text-align: center;
+
+    input {
+      margin-top: 3%;
+    }
+  }
+}
+
+header{
+    img{
+        width: 80px;
+    }
+}
+
