@@ -6,7 +6,17 @@ h2 {
 
 img {
   width: 90px;
- 
+  transition: transform 0.3s ease-out; /* Animación básica de transformación */
+  animation: fadeIn 0.5s ease-out; /* Animación de fadeIn */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 header {
@@ -48,6 +58,18 @@ p {
 
 .foto {
   width: 300px;
+  animation: slideInLeft 0.5s ease-out; /* Animación de slideInLeft */
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .container-padre {
@@ -85,7 +107,14 @@ p {
 
     img {
       width: 60%;
+      animation: rotate 0.8s linear infinite; /* Animación de rotación */
     }
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -116,7 +145,20 @@ p {
 
     img {
       width: 45%;
+      animation: pulse 1s ease-out infinite; /* Animación de pulso */
     }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
@@ -125,6 +167,18 @@ p {
 
   img {
     width: 30%;
+    animation: slideInUp 0.5s ease-out; /* Animación de slideInUp */
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -133,6 +187,16 @@ p {
 
   img {
     width: 45%;
+    animation: bounce 0.8s ease-out infinite; /* Animación de bounce */
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
 
@@ -155,9 +219,9 @@ p {
   }
 }
 
-header{
-    img{
-        width: 80px;
-    }
+header {
+  img {
+    width: 80px;
+  }
 }
 
